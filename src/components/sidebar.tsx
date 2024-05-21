@@ -10,7 +10,7 @@ const Sidebar = () => {
     <aside
       className={`lg:w-full lg:relative fixed h-screen md:w-[50%] w-[70%] lg:left-0 ${
         state.isOpen ? "left-0" : "-left-[100%]"
-      } bg-black duration-300 ease-in`}
+      } bg-gray-50 border-r duration-300 ease-in`}
     ></aside>
   );
 };
