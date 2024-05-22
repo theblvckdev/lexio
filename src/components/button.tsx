@@ -10,7 +10,7 @@ interface ButtonProps {
 const Button = ({ content, radius, variant, width }: ButtonProps) => {
   return (
     <button
-      className={`p-2.5 ${variant} ${radius} ${width} text-white outline-none shadow-md`}
+      className={`p-2.5 ${variant} ${radius} ${width} text-black outline-none shadow-md`}
     >
       {content}
     </button>
