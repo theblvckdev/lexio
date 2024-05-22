@@ -15,7 +15,7 @@ function classNames(
 }
 
 const Navbar: React.FC = () => {
-  const { state, toggleIsOpen } = useAppContext();
+  const { toggleIsOpen } = useAppContext();
 
   return (
     <Disclosure as="nav" className="bg-transparent">
@@ -27,9 +27,7 @@ const Navbar: React.FC = () => {
                 {/* Mobile menu button*/}
                 <Disclosure.Button
                   onClick={toggleIsOpen}
-                  className={`relative inline-flex items-center justify-center rounded-md p-2 ${
-                    state.isOpen ? "text-white" : "text-black"
-                  } outline-none`}
+                  className={`relative inline-flex items-center justify-center rounded-md p-2 text-black outline-none`}
                 >
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
